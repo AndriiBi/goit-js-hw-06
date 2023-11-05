@@ -12,7 +12,7 @@ btnChange.addEventListener("click", handleClick);
 
 function handleClick () {
   const randomColor = getRandomHexColor();
-  bodyBackgroundCOlor.style.backgroundColor = getRandomHexColor();
+  bodyBackgroundCOlor.style.backgroundColor = randomColor;
   colorSpan.textContent = randomColor;
 }
 
