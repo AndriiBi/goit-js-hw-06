@@ -14,9 +14,10 @@ const images = [
 ];
 
 const ulElement = document.querySelector(".gallery");
-
+let liHtml = '';
 images.forEach((image) => {
-  const liHtml = `<li class="image-item"><img src="${image.url}" alt="${image.alt}" style="width: 200px; height: 150px;"></li>`;  ulElement.insertAdjacentHTML('beforeend', liHtml);
+  liHtml += `<li class="image-item"><img src="${image.url}" alt="${image.alt}" style="width: 200px; height: 150px;"></li>`;
 });
+ulElement.insertAdjacentHTML('beforeend', liHtml);
 
 console.log(ulElement)

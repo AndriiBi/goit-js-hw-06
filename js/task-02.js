@@ -10,11 +10,10 @@ const ingredients = [
 const ulElement = document.getElementById("ingredients");
 
 ingredients.forEach((ingredient) => {
-
   const liElement = document.createElement("li");
   liElement.textContent = ingredient;
   liElement.classList.add("item");
+  ulElement.appendChild(liElement);
 });
-ulElement.appendChild(liElement);
 
 console.log(ulElement)
